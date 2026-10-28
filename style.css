@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5fa;
+  color: #242830;
+}
+
+nav {
+  background: #242830;
+  color: white;
+  padding: 18px 5%;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.card,
+.panel {
+  background: white;
+  border: 1px solid #e1e5ec;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 14px;
+  color: #596170;
+}
+
+.card strong {
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+
+#totalIncome {
+  color: #16824a;
+}
+
+#totalExpenses {
+  color: #c52d42;
+}
+
+.panel {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  border: 1px solid #ccd2dc;
+  background: white;
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+button {
+  border: 1px solid transparent;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.secondary {
+  background: white;
+  color: #333;
+  border-color: #ccd2dc;
+}
+
+.delete-button {
+  background: #fff0f2;
+  color: #b42338;
+  border-color: #efbdc5;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f8f9fc;
+}
+
+.income {
+  color: #16824a;
+}
+
+.expense {
+  color: #c52d42;
+}
+
+#message {
+  color: #b42338;
+}
+
+@media (max-width: 650px) {
+  .summary,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+}
